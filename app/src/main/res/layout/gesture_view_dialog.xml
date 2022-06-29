@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.gesture.GestureOverlayView
+        android:background="#3E97BA"
+        android:id="@+id/GestureDialog"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight="1"
+        android:gestureStrokeType="multiple">
+    </android.gesture.GestureOverlayView>
+</LinearLayout>

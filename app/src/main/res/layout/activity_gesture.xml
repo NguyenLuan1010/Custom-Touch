@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context=".Activity.Gesture_Activity">
+
+    <android.gesture.GestureOverlayView
+        android:id="@+id/WidgetGesture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gestureStrokeType="multiple">
+
+    </android.gesture.GestureOverlayView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Add_New_Gesture"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="#3A7D97"
+            android:text="Add"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Delete_Gesture"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="#3A7D97"
+            android:textColor="@color/white"
+            android:text="Delete"
+            android:textSize="20dp" />
+    </LinearLayout>
+</LinearLayout>

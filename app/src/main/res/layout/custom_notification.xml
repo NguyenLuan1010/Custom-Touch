@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+
+    <ImageView
+        android:id="@+id/Img_Apps"
+        android:layout_width="35dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_app" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_toStartOf="@+id/Hide_Show"
+        android:layout_toEndOf="@+id/Img_Apps"
+        android:orientation="vertical"
+        android:text="Touch to open"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+
+    <LinearLayout
+        android:id="@+id/Hide_Show"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:id="@+id/Hide_Home_Button"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#088BE3"
+            android:text="Hide"
+            android:textColor="@color/white"
+            android:textSize="11dp" />
+
+        <Button
+            android:id="@+id/Show_Home_Button"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#088BE3"
+            android:text="Show"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+    </LinearLayout>
+</RelativeLayout>

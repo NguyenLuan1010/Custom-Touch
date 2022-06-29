@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3A7D97"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activity.ControlHome">
+
+    <ImageView
+        android:id="@+id/Start"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/button_choice"
+        android:src="@drawable/ic_pause"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/Stop"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/button_choice"
+        android:src="@drawable/ic_play"/>
+
+    <TextView
+        android:id="@+id/Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:background="@drawable/themes_radius"
+        android:gravity="center"
+        android:id="@+id/Set_Gesture_Button"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/icon_gesture"
+            android:layout_marginLeft="12dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Gesture For Your App "
+            android:textColor="#FFFF"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:background="@drawable/themes_radius"
+        android:gravity="center"
+        android:id="@+id/HomeButton_Themes"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/icon_themes"
+            android:layout_marginLeft="12dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Home Button Themes"
+            android:textColor="#FFFF"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#30B3A2"
+        android:id="@+id/Enable_Device_Admin"
+        android:layout_margin="20dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_check_circle"
+            android:layout_marginLeft="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Device Admin is enabled by this app.
+            Click to turn off it."
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="#FFFF"
+            android:textSize="15dp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#e3494b"
+        android:id="@+id/Disable_Device_Admin"
+        android:layout_margin="20dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_cancel_circle"
+            android:layout_marginLeft="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Device Admin is disabled .Lock Screen will be used if you turn on it."
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="#FFFF"
+            android:textSize="15dp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+</LinearLayout>
